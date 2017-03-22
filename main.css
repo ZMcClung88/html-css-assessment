@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:600,700');
 
 .wrapper {
 	background: url("main-bg.jpeg") no-repeat center;
@@ -11,9 +11,9 @@
 
 }
 
-/*Header section*/
+/*small screen header section*/
 
-.header-container {
+.header-container-small {
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
@@ -37,25 +37,78 @@
 	margin-right: 20px;
 	}
 
+/* expanded screen header section */
+.header-container-large {
+	display: flex;
+	color: white;
+	font-size: 30px;
+	justify-content: center;
+}
+
+.menu-btn-box {
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
 /* main content section*/
 
 .main-container {
-	border: 1px solid black;
 	display: flex;
-	height: auto;
+	height: 100px;
 	width: auto;
 	color: white;
+	justify-content: center;
 }
 
 .content-box h1 {
-	height: 60px;
+	font-size: 120px;
 	color: white;
+	display: flex;
+	justify-content: center;
 }
 
 .content-box p {
+	font-size: 25px;
 	color: white;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	letter-spacing: 3.5px;
 }
 
+/* footer section */
 
+.footer-container {
+	display: flex;
+	justify-content: center;
+	padding: 25px;
+}
+
+.button-box img{
+	height: 60px;
+	width: 60px;
+	display: flex;
+	justify-content: center;
+}
+
+/* media queries */
+
+@media(min-width: 750px) {
+	.header-container-small {
+		display: none;
+	}
+}
+
+@media(max-width: 749px) {
+	.header-container-large {
+		display: none;
+	}
+}
 
 
